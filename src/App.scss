@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+$Raleway: Raleway;
+$Karla: Karla;
+$Lato: Lato;
+// $Titillium: Titillium;
+
+body {
+  font-family: $Raleway;
+
+  
+}
+
 .contentContainer {
   max-width: 960px;
   height: 100%;
@@ -13,16 +28,53 @@
   // border: solid 1px rgba(0, 0, 0, 0.322);
   box-shadow: 0 0 30px rgba(95, 95, 95, 0.568);
   padding: 0 10px;
-  height: 200px;
+  min-height: 200px;
   width: 240px;
   border-radius: 15px;
+
   margin: auto;
   margin-top: 40px;
-  background-color: white;
+  background-color: #ffffff; //can't decide between these 2 colors
+  // background-color: #fbfbf8;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 
   h2 {
     display: block;
-    padding-top: 20px;
-    padding-left: 10px;
+    margin: 0;
+  }
+
+  p {
+
+    margin: 5px 0 0 0;
+  }
+
+  &__container {
+    padding: 30px 10px 0 10px;
+  }
+
+  &__button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: #3f4b57;
+    color: white;
+    font-size: 18px;
+    font-family: $Raleway;
+    box-shadow: 0 0 10px rgba(95, 95, 95, 0.568);
+
+    width: 260px - 40px;
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    margin: 0 10px;
+  }
+}
+
+.Tasks-container {
+  @media all and (min-width: 600px) {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

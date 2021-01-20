@@ -11,9 +11,13 @@ function App() {
             {/* <Router>
               <Route path="/home" component={EmployeeScreen} />
             </Router> */}
-            <Task />
-            <Task />
-            <Task />
+            <h1>Task Component</h1>
+            <div className="Tasks-container">
+              <Task />
+              <Task />
+              <Task />
+            </div>
+            
       </div>
     </div>
   );
