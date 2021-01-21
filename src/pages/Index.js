@@ -1,1 +1,0 @@
-// first page person sees when URL is loaded/Logi in page

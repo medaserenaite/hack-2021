@@ -1,28 +1,35 @@
+import React, { useState } from 'react'
 import './App.scss';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import EmployeeScreen from './pages/Home'
-import Task from './components/Task'
+import Home from './pages/Home'
 import Nav from './components/Nav'
 
+import Awards from './pages/Awards'
 
-function App() {
+import GlobalContext from "./context/GlobalContext"
+
+
+function InnerApp(){
   return (
     <div className="App">
       <Nav />
-      <div className="contentContainer">
-            {/* <Router>
-              <Route path="/home" component={EmployeeScreen} />
-            </Router> */}
-            <h1>Task Component</h1>
-            <div className="Tasks-container">
-              <Task />
-              <Task />
-              <Task />
-            </div>
-            
+      <div className="contentContainer">   
+        {/* Home screen (contains Tasks) */}
+        <Route path="/home" component={Home} />
+        <Route path="/awards" component={Awards} />
       </div>
     </div>
   );
 }
 
-export default App;
+
+export default function App() {
+
+  return (
+    <Router>
+      <GlobalContext.Provider>
+        <InnerApp />
+      </GlobalContext.Provider>
+    </Router>
+  );
+}

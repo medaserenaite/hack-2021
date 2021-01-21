@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext, useEffect } from "react";
 import './styles/Nav.scss'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 export default function Nav() {
 
@@ -10,6 +11,8 @@ export default function Nav() {
 
     return (
         <div className="Navigation" onClick={(e) => toggleNav(e)}>
+            <Link to="/home" className="Link">Home Screen</Link><br/>
+            <Link to="/awards" className="Link">Awards Screen</Link>
             <div className="Navigation__container">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
