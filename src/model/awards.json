@@ -1,0 +1,25 @@
+{
+    "awards" :
+    [
+        {
+            "id": 1,
+            "awardName" : "An hour of PTO",
+            "pointsRequired" : 150
+        },
+        {
+            "id": 2,
+            "awardName" : "$10 Gift Card to Eco & the Flamingo zero waste store",
+            "pointsRequired" : 80
+        },
+        {
+            "id": 3,
+            "awardName" : "$15 towards your Roth IRA account",
+            "pointsRequired": 120
+        },
+        {
+            "id": 4,
+            "awardName" : "$10 off of your health insurance",
+            "pointsRequired": 100
+        }
+    ]
+}

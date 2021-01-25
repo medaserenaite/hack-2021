@@ -1,0 +1,25 @@
+{
+    "tasks" :
+    [
+        {
+            "id": 1,
+            "taskName" : "Meatless Monday Lunch or Dinner",
+            "pointsToAcquire" : 20
+        },
+        {
+            "id": 2,
+            "taskName" : "Subscribe to a compost service",
+            "pointsToAcquire" : 40
+        },
+        {
+            "id": 3,
+            "taskName" : "Use reusable bags on your grocery trip",
+            "pointsToAcquire" : 25
+        },
+        {
+            "id": 4,
+            "taskName" : "Install a low-flow showerhead or a shower timer",
+            "pointsToAcquire" : 50
+        }        
+    ]
+}
