@@ -1,17 +1,11 @@
 .Popup {
-    height: 500px;
+    height: 200px;
     width: 300px;
-    border: solid 3px red;
     background-color: white;
     position: absolute;
     padding: 30px;
-    top: 50%;
-    right: 50%;
-    display: none;
-
-    // body & {
-    //     background-color: gray;
-    // }
+    top: 30%;
+    display: none
 }
 
 .Overlay{
@@ -23,5 +17,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+    display: flex;
+    justify-content: center;
     display: none
 }
