@@ -1,5 +1,5 @@
-import React from 'react'
-import { storage } from './firebase'
+import React, { useState } from 'react'
+import { storage } from '../firebase'
 
 export default function ImageUpload() {
     const [image, setImage] = useState(null);

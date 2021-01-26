@@ -1,0 +1,27 @@
+.Popup {
+    height: 500px;
+    width: 300px;
+    border: solid 3px red;
+    background-color: white;
+    position: absolute;
+    padding: 30px;
+    top: 50%;
+    right: 50%;
+    display: none;
+
+    // body & {
+    //     background-color: gray;
+    // }
+}
+
+.Overlay{
+    background-color: rgba(0, 0, 0, 0.315);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none
+}
