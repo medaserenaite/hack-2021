@@ -1,15 +1,7 @@
-.Popup {
-    height: 200px;
-    width: 300px;
-    background-color: white;
-    position: absolute;
-    padding: 30px;
-    top: 30%;
-    display: none
-}
+@import '../../App.scss'; //for global variables
 
 .Overlay{
-    background-color: rgba(0, 0, 0, 0.315);
+    background-color: rgba(0, 0, 0, 0.515);
     position: fixed;
     height: 100%;
     width: 100%;
@@ -20,4 +12,36 @@
     display: flex;
     justify-content: center;
     display: none
+}
+
+.Popup {
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    padding: 30px;
+    top: 30%;
+    border-radius: 15px;
+    display: none;
+    
+    &__button {
+        border: none;
+        padding: 10px 15px;
+        border-radius: 15px;
+        background-color: $darkGrey;
+        color: white;
+        font-size: 18px;
+        font-family: $Raleway;
+        box-shadow: 0 0 10px rgba(95, 95, 95, 0.568);
+        width: 260px - 40px;
+        display: block;
+    }
+
+    &__bottom-container {
+        display: flex;
+        position: absolute;
+        bottom: 30px;
+        width: 300px;
+        justify-content: center;
+    }
 }

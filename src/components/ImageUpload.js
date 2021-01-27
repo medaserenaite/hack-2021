@@ -33,7 +33,10 @@ export default function ImageUpload() {
              {/* uploads an image to firebase */}
             <input required type="file" onChange={handleChange}/>
             {/* TODO: do not refresh on Upload-click if there is no file selected */}
-            <button onClick={handleUpload}>Upload</button>
+            <div className="Popup__bottom-container">
+                <button onClick={handleUpload} class="Popup__button">Upload</button>
+            </div>
+            
         </div>
     )
 }
