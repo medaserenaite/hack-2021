@@ -1,8 +1,10 @@
 import React from 'react'
 import trees from '../trees.svg'
+import Popup from './Popup'
 
 export default function Task() {
     return (
+        <>
         <div className="Task">
             
             <div className="Task__container">
@@ -13,5 +15,7 @@ export default function Task() {
             </div>
             <button className="Task__button">Ipsum Lorem</button>
         </div>
+        <Popup />
+        </>
     )
 }

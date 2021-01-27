@@ -7,8 +7,8 @@ export default function Home() {
             <h1>Home Screen</h1>
             <div className="Tasks-container">
               <Task />
-              <Task />
-              <Task />
+              {/* <Task />
+              <Task /> */}
             </div>
         </div>
     )
