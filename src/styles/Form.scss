@@ -1,0 +1,49 @@
+@import '../App.scss'; //for global variables
+
+.Form {
+    // border: solid 1px rgba(0, 0, 0, 0.322);
+    box-shadow: 0 0 30px rgba(95, 95, 95, 0.568);
+    padding: 0 10px;
+    min-height: 270px;
+    width: 240px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: #ffffff; //can't decide between these 2 colors
+    // background-color: #fbfbf8;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    &__container {
+        padding: 30px 10px 0 10px;
+    }
+    
+    &__button {
+        border: none;
+        padding: 10px 15px;
+        border-radius: 15px;
+        background-color: $darkGrey;
+        color: white;
+        font-size: 18px;
+        font-family: $Raleway;
+        box-shadow: 0 0 10px rgba(95, 95, 95, 0.568);
+    
+        width: 260px - 40px;
+        display: block;
+        position: absolute;
+        bottom: 30px;
+    }
+
+    label {
+        font-size: 24px;
+        font-family: $Raleway;
+    }
+
+    input {
+        width: 210px;
+        font-size: 18px;
+        margin-bottom: 15px;
+        height: 29px;;
+    }
+}

@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Nav from './components/Nav'
 import Awards from './pages/Awards'
 import GlobalContext from "./context/GlobalContext"
+import Form from './components/Form'
 
 function InnerApp(){
   return (
@@ -13,6 +14,7 @@ function InnerApp(){
       <div className="contentContainer">   
         <Route path="/home" component={Home} />
         <Route path="/awards" component={Awards} />
+        <Form />
       </div>
     </div>
   );
