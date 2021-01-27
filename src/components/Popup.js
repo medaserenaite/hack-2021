@@ -1,6 +1,6 @@
 import React from 'react'
 import ImageUpload from './ImageUpload'
-import './styles/Popup.scss'
+import '../styles/Popup.scss'
 
 export default function Popup() {
     return (

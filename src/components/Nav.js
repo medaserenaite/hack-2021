@@ -1,5 +1,5 @@
 import React from "react";
-import './styles/Nav.scss'
+import '../styles/Nav.scss'
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 export default function Nav() {

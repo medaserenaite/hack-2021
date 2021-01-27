@@ -1,6 +1,6 @@
 import React from 'react'
 import trees from '../trees.svg'
-import './styles/AwardCard.scss'
+import '../styles/AwardCard.scss'
 
 export default function AwardCard() {
     return (
